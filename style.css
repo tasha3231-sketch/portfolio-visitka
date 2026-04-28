@@ -1,0 +1,518 @@
+/* VIBE PORTFOLIO STYLE */
+:root{--dark:#050713;--ink:#f7f4ee;--muted:#b9bdd5;--line:rgba(255,255,255,.13);--violet:#8f7ae5;--lavender:#c7b8ff;--honey:#d9a84f;--gold:#f0cf8a;--moss:#7f9f73}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;background:radial-gradient(circle at 18% 8%,rgba(143,122,229,.28),transparent 34%),radial-gradient(circle at 85% 24%,rgba(217,168,79,.16),transparent 32%),radial-gradient(circle at 70% 76%,rgba(127,159,115,.14),transparent 30%),linear-gradient(180deg,#090d25,var(--dark));color:var(--ink);overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(180deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:72px 72px;opacity:.28}.noise{position:fixed;inset:0;pointer-events:none;opacity:.045;background-image:linear-gradient(45deg,#fff 1px,transparent 1px);background-size:5px 5px;z-index:1}.top-nav{position:sticky;top:16px;width:min(980px,calc(100% - 32px));margin:16px auto 0;padding:10px;display:flex;gap:8px;justify-content:center;border:1px solid var(--line);border-radius:999px;background:rgba(5,7,19,.68);backdrop-filter:blur(22px);box-shadow:0 24px 70px rgba(0,0,0,.32);z-index:50}.top-nav a{color:var(--ink);text-decoration:none;font-size:14px;font-weight:800;opacity:.78;padding:11px 14px;border-radius:999px;transition:.25s;white-space:nowrap}.top-nav a:hover{opacity:1;background:rgba(255,255,255,.07)}.hero,.section,.footer{width:min(1160px,calc(100% - 32px));margin:0 auto;position:relative;z-index:2}.hero{min-height:88vh;display:grid;grid-template-columns:1.25fr .75fr;gap:42px;align-items:center;padding:90px 0}.eyebrow{display:block;margin:0 0 18px;color:var(--lavender);text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:900}h1,h2{font-family:Georgia,"Times New Roman",serif}h1,h2,h3,p{margin-top:0}h1{max-width:980px;font-size:clamp(48px,7.5vw,98px);line-height:.9;letter-spacing:-.06em;margin-bottom:26px;background:linear-gradient(110deg,#fff,var(--lavender),var(--gold),#d8ead0);background-size:230% 230%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:textGlow 10s ease infinite}h2{font-size:clamp(36px,5vw,70px);line-height:.96;letter-spacing:-.04em;margin-bottom:20px}h3{font-size:28px;line-height:1.08}.lead,.section-text,.section-head p,.final-contact p,.soft-cta p,.about-text p,.quiz-screen p{color:var(--muted);font-size:20px;line-height:1.6}.lead{max-width:760px;margin-bottom:32px}.hero-actions,.contact-links{display:flex;gap:14px;flex-wrap:wrap}.btn{position:relative;min-height:56px;padding:0 26px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.06);color:var(--ink);text-decoration:none;font:inherit;font-weight:900;cursor:pointer;overflow:hidden;transition:.28s}.btn.primary{background:linear-gradient(135deg,var(--violet),#6d4cff,var(--honey));background-size:220% 220%;animation:gradientMove 8s ease infinite;border:none;box-shadow:0 20px 52px rgba(143,122,229,.34),0 0 70px rgba(217,168,79,.12)}.btn:hover{transform:translateY(-3px);box-shadow:0 26px 70px rgba(0,0,0,.34),0 0 46px rgba(199,184,255,.22)}.hero-panel{display:grid;gap:18px}.mini-card,.solution-card,.funnel-step,.soft-cta,.about,.final-contact,.quiz-box{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:34px;background:radial-gradient(circle at 15% 0%,rgba(143,122,229,.13),transparent 34%),linear-gradient(180deg,rgba(255,255,255,.085),rgba(255,255,255,.035));backdrop-filter:blur(22px);box-shadow:0 34px 90px rgba(0,0,0,.42),inset 0 1px 0 rgba(255,255,255,.11)}.mini-card{padding:24px}.mini-card span{color:var(--lavender);font-size:13px;font-weight:900}.mini-card strong{display:block;font-family:Georgia,serif;font-size:28px;margin:8px 0}.mini-card p{color:var(--muted);margin:0}.section{padding:96px 0}.intro{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.section-head{max-width:860px;margin-bottom:40px}.solutions-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.solution-card{padding:32px;min-height:500px;transition:.32s}.solution-card:before,.funnel-step:before,.soft-cta:before,.about:before,.final-contact:before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:linear-gradient(135deg,rgba(143,122,229,.75),rgba(217,168,79,.42),rgba(127,159,115,.38));background-size:220% 220%;animation:gradientMove 9s ease infinite;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:.45;pointer-events:none}.solution-card:hover{transform:translateY(-8px) scale(1.01)}.solution-top{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:22px}.solution-top span{color:rgba(255,255,255,.35);font-family:Georgia,serif;font-size:42px;font-weight:900}.solution-top b{font-size:12px;text-transform:uppercase;color:var(--gold);letter-spacing:.08em}.decision{margin:22px 0;padding:18px;border-left:3px solid var(--gold);border-radius:18px;background:rgba(255,255,255,.055)}.decision small{display:block;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;margin-bottom:8px}.decision strong{font-size:20px}.solution-card ul{padding:0;list-style:none;margin:0 0 20px}.solution-card li{position:relative;padding-left:24px;color:var(--muted);margin-bottom:12px}.solution-card li:before{content:"→";position:absolute;left:0;color:var(--lavender)}.outcome{font-weight:900}.funnel-path{position:relative;display:grid;gap:24px}.funnel-path:before{content:"";position:absolute;left:22px;top:34px;bottom:34px;width:2px;background:linear-gradient(180deg,var(--violet),var(--honey),var(--moss));box-shadow:0 0 26px rgba(217,168,79,.35)}.funnel-step{margin-left:56px;padding:32px}.dot{position:absolute;left:-45px;top:38px;width:18px;height:18px;border-radius:50%;box-shadow:0 0 30px currentColor}.violet{background:var(--violet);color:var(--violet)}.gold{background:var(--honey);color:var(--honey)}.green{background:var(--moss);color:var(--moss)}.soft-cta{margin-top:42px;padding:52px;text-align:center}.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:center;padding:46px}.about-photo img{width:100%;display:block;border-radius:30px;border:1px solid rgba(255,255,255,.16);box-shadow:0 36px 100px rgba(0,0,0,.5)}.final-contact{padding:52px}.contact-links{margin-top:26px}.contact-links a,.footer a{color:var(--ink);text-decoration:none}.contact-links a{padding:14px 20px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.055)}.footer{display:flex;justify-content:space-between;gap:24px;padding:44px 0 60px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}.footer div{display:flex;gap:18px;flex-wrap:wrap}.footer a{color:var(--muted)}.quiz-modal{position:fixed;inset:0;display:none;z-index:100;align-items:center;justify-content:center;padding:18px;background:rgba(3,5,14,.82);backdrop-filter:blur(20px)}.quiz-modal.open{display:flex}.quiz-box{width:min(760px,100%);padding:38px}.quiz-close{position:absolute;top:18px;right:22px;border:0;background:transparent;color:var(--muted);font-size:34px;cursor:pointer}.progress{height:6px;background:rgba(255,255,255,.12);border-radius:999px;overflow:hidden;margin-bottom:32px}#progressBar{height:100%;width:0;background:linear-gradient(90deg,var(--violet),var(--honey),var(--moss));transition:.35s}.quiz-screen{display:none}.quiz-screen.active{display:block;animation:show .36s ease both}.answers{display:grid;gap:12px;margin-top:26px}.answers button{padding:18px;border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--ink);text-align:left;font:inherit;cursor:pointer}.answers button:hover{border-color:rgba(217,168,79,.5)}.result-card{margin:26px 0;padding:20px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid var(--line)}.result-card span{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.12em}.result-card strong{font-size:22px}.lead-form{display:grid;gap:14px}.lead-form input{min-height:54px;padding:0 16px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--ink);font:inherit}.consent{display:flex;gap:10px;color:var(--muted);font-size:13px;line-height:1.45}.consent input{width:16px;height:16px;margin-top:2px;accent-color:var(--violet)}.consent a{color:var(--gold)}.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}.delay-1{transition-delay:.08s}.delay-2{transition-delay:.16s}.delay-3{transition-delay:.24s}@keyframes show{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}@keyframes gradientMove{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}@keyframes textGlow{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}@media(max-width:920px){.top-nav{justify-content:flex-start;overflow-x:auto}.hero,.solutions-grid,.about{grid-template-columns:1fr}.hero{padding:64px 0;min-height:auto}.section{padding:62px 0}h1{font-size:46px}h2{font-size:38px}.lead,.section-text,.section-head p,.about-text p{font-size:18px}.solution-card,.about,.soft-cta,.final-contact,.quiz-box{padding:24px}.solution-card{min-height:auto}.funnel-path:before{left:12px}.funnel-step{margin-left:34px;padding:24px}.dot{left:-30px}.footer{flex-direction:column}.btn,.contact-links a{width:100%}}
+
+
+/* =========================================================
+   FINAL PREMIUM VIBE UPGRADE
+   Фиолетовый = идея / интеллект
+   Золото = ценность / деньги
+   Зелёный = результат / стабильность
+========================================================= */
+
+/* Глубже фон: меньше серости, больше живого света */
+body {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(143,122,229,.46), transparent 34%),
+    radial-gradient(circle at 88% 18%, rgba(217,168,79,.30), transparent 34%),
+    radial-gradient(circle at 68% 80%, rgba(127,159,115,.26), transparent 34%),
+    linear-gradient(180deg, #07091c 0%, #03040d 100%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(143,122,229,.24), transparent 28%),
+    radial-gradient(circle at 78% 42%, rgba(217,168,79,.18), transparent 30%),
+    radial-gradient(circle at 52% 82%, rgba(127,159,115,.16), transparent 32%);
+  filter: blur(18px);
+  opacity: .95;
+  z-index: 0;
+}
+
+/* Световая траектория: визуально ведёт по странице */
+main::before {
+  content: "";
+  position: fixed;
+  left: 50%;
+  top: 0;
+  width: 2px;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(143,122,229,.78),
+    rgba(217,168,79,.70),
+    rgba(127,159,115,.62),
+    transparent
+  );
+  box-shadow:
+    0 0 24px rgba(143,122,229,.48),
+    0 0 48px rgba(217,168,79,.28),
+    0 0 78px rgba(127,159,115,.20);
+  opacity: .34;
+  z-index: 0;
+  animation: lightFlow 8s ease-in-out infinite;
+}
+
+/* Первый экран — больше объёма */
+.hero::before {
+  content: "";
+  position: absolute;
+  right: 4%;
+  top: 14%;
+  width: 560px;
+  height: 560px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, rgba(143,122,229,.42), transparent 55%),
+    radial-gradient(circle at 70% 60%, rgba(217,168,79,.22), transparent 48%),
+    radial-gradient(circle at 35% 80%, rgba(127,159,115,.14), transparent 44%);
+  filter: blur(58px);
+  z-index: -1;
+  animation: breatheGlow 7s ease-in-out infinite;
+}
+
+/* Объектные карточки */
+.solution-card,
+.funnel-step,
+.about,
+.soft-cta,
+.final-contact,
+.mini-card {
+  isolation: isolate;
+  border-color: rgba(240,207,138,.24);
+  background:
+    radial-gradient(circle at 0% 0%, rgba(199,184,255,.20), transparent 34%),
+    radial-gradient(circle at 100% 100%, rgba(217,168,79,.14), transparent 36%),
+    linear-gradient(145deg, rgba(255,255,255,.12), rgba(255,255,255,.04));
+  box-shadow:
+    0 45px 130px rgba(0,0,0,.62),
+    0 0 60px rgba(143,122,229,.16),
+    inset 0 1px 0 rgba(255,255,255,.20);
+}
+
+/* Живой градиент внутри объектов */
+.solution-card::after,
+.funnel-step::after,
+.about::after,
+.soft-cta::after,
+.final-contact::after,
+.mini-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    linear-gradient(
+      120deg,
+      transparent 0%,
+      rgba(199,184,255,.20) 22%,
+      rgba(240,207,138,.22) 48%,
+      rgba(127,159,115,.16) 72%,
+      transparent 100%
+    );
+  background-size: 260% 260%;
+  animation: premiumFlow 6s ease-in-out infinite;
+  opacity: .70;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Карточки решений: меньше плоскости, больше характера */
+.solution-card {
+  border: 1px solid rgba(240,207,138,.32);
+  box-shadow:
+    0 50px 140px rgba(0,0,0,.72),
+    0 0 70px rgba(143,122,229,.20),
+    inset 0 1px 0 rgba(255,255,255,.22);
+}
+
+.solution-card:nth-child(1) {
+  box-shadow:
+    0 50px 140px rgba(0,0,0,.72),
+    0 0 86px rgba(143,122,229,.30);
+}
+
+.solution-card:nth-child(2) {
+  box-shadow:
+    0 50px 140px rgba(0,0,0,.72),
+    0 0 96px rgba(217,168,79,.30);
+}
+
+.solution-card:nth-child(3) {
+  box-shadow:
+    0 50px 140px rgba(0,0,0,.72),
+    0 0 84px rgba(143,122,229,.24),
+    0 0 74px rgba(127,159,115,.20);
+}
+
+.solution-card:nth-child(4) {
+  box-shadow:
+    0 50px 140px rgba(0,0,0,.72),
+    0 0 106px rgba(127,159,115,.28),
+    0 0 76px rgba(217,168,79,.20);
+}
+
+/* Премиальные цифры */
+.solution-top span,
+.mini-card span {
+  background: linear-gradient(120deg, #ffffff, #f0cf8a, #c7b8ff, #d8ead0);
+  background-size: 220% 220%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 26px rgba(240,207,138,.42));
+  animation: premiumFlow 7s ease infinite;
+}
+
+.solution-top span {
+  font-size: 60px;
+}
+
+/* Маркеры справа сверху */
+.solution-top b {
+  color: #f0cf8a;
+  text-shadow: 0 0 18px rgba(240,207,138,.38);
+}
+
+/* Заголовки */
+.solution-card h3,
+.funnel-step h3,
+.mini-card strong {
+  color: #fff;
+  text-shadow:
+    0 0 18px rgba(199,184,255,.20),
+    0 0 30px rgba(143,122,229,.14);
+}
+
+/* Блок “Решение” — более дорогой и светящийся */
+.decision {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg,
+      rgba(240,207,138,.22),
+      rgba(199,184,255,.14),
+      rgba(127,159,115,.10)
+    );
+  border-left: 4px solid #f0cf8a;
+  box-shadow:
+    inset 0 0 38px rgba(240,207,138,.13),
+    0 0 42px rgba(240,207,138,.18);
+}
+
+.decision::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    transparent,
+    rgba(255,255,255,.16),
+    rgba(240,207,138,.18),
+    transparent
+  );
+  transform: translateX(-120%);
+  animation: decisionSweep 5.8s ease-in-out infinite;
+}
+
+.decision strong {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.decision small {
+  position: relative;
+  z-index: 1;
+}
+
+/* Стрелки и результат */
+.solution-card li::before {
+  color: #f0cf8a;
+  text-shadow: 0 0 16px rgba(240,207,138,.55);
+}
+
+.outcome {
+  color: #f0cf8a;
+  text-shadow: 0 0 22px rgba(240,207,138,.42);
+}
+
+/* Hover = карточка как физический объект */
+.solution-card:hover,
+.funnel-step:hover,
+.mini-card:hover {
+  transform: translateY(-14px) scale(1.02);
+  border-color: rgba(240,207,138,.62);
+  box-shadow:
+    0 60px 160px rgba(0,0,0,.80),
+    0 0 92px rgba(143,122,229,.30),
+    0 0 124px rgba(217,168,79,.28),
+    0 0 104px rgba(127,159,115,.20),
+    inset 0 1px 0 rgba(255,255,255,.18);
+}
+
+/* Воронка */
+.funnel-path::before {
+  background: linear-gradient(
+    180deg,
+    var(--violet),
+    var(--honey),
+    var(--moss),
+    var(--violet)
+  );
+  background-size: 100% 260%;
+  animation: verticalGradient 6s ease infinite;
+  opacity: .95;
+}
+
+/* CTA — теплее, заметнее */
+.soft-cta {
+  box-shadow:
+    0 48px 140px rgba(0,0,0,.60),
+    0 0 86px rgba(217,168,79,.20),
+    0 0 110px rgba(127,159,115,.13);
+}
+
+/* Кнопки */
+.btn.primary {
+  box-shadow:
+    0 24px 64px rgba(143,122,229,.42),
+    0 0 54px rgba(217,168,79,.20);
+}
+
+.btn.primary:hover {
+  box-shadow:
+    0 32px 86px rgba(143,122,229,.48),
+    0 0 78px rgba(217,168,79,.28),
+    0 0 96px rgba(127,159,115,.16);
+}
+
+/* Фото — глубже */
+.about-photo {
+  position: relative;
+}
+
+.about-photo::before {
+  content: "";
+  position: absolute;
+  inset: -22px;
+  border-radius: 36px;
+  background: linear-gradient(135deg, rgba(143,122,229,.46), rgba(217,168,79,.22), rgba(127,159,115,.18));
+  filter: blur(30px);
+  z-index: -1;
+  animation: premiumFlow 9s ease infinite;
+}
+
+.about-photo img {
+  transition: transform .55s ease, box-shadow .55s ease;
+}
+
+.about-photo:hover img {
+  transform: scale(1.025) rotate(-.8deg);
+  box-shadow:
+    0 48px 130px rgba(0,0,0,.62),
+    0 0 78px rgba(143,122,229,.30);
+}
+
+/* Появление блоков — выразительнее */
+.reveal {
+  transform: translateY(36px) scale(.982);
+  opacity: 0;
+  filter: blur(7px);
+}
+
+.reveal.visible {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  filter: none;
+}
+
+/* Анимации */
+@keyframes premiumFlow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes breatheGlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: .78;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+@keyframes lightFlow {
+  0%, 100% {
+    transform: translateY(-8%);
+    opacity: .22;
+  }
+  50% {
+    transform: translateY(8%);
+    opacity: .40;
+  }
+}
+
+@keyframes decisionSweep {
+  0%, 40% {
+    transform: translateX(-120%);
+  }
+  70%, 100% {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes verticalGradient {
+  0%, 100% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+}
+.result-bridge {
+  margin: 24px 0;
+  padding: 22px;
+  border-radius: 22px;
+  background:
+    linear-gradient(135deg,
+      rgba(240,207,138,.14),
+      rgba(199,184,255,.10),
+      rgba(127,159,115,.08)
+    );
+  border: 1px solid rgba(240,207,138,.24);
+  box-shadow:
+    inset 0 0 30px rgba(240,207,138,.08),
+    0 0 34px rgba(143,122,229,.10);
+}
+
+.result-bridge h3 {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.result-bridge p {
+  margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   QUIZ RESPONSIVE FIX
+   Исправляет крупные заголовки результата диагностики,
+   чтобы текст не вылезал за экран
+========================================================= */
+
+.quiz-box {
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+}
+
+.quiz-screen h2,
+#quizResult h2,
+#quizQuestion h2,
+#quizLoading h2,
+#quizStart h2 {
+  font-size: clamp(30px, 4.6vw, 56px);
+  line-height: 1.03;
+  letter-spacing: -0.035em;
+  max-width: 100%;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: auto;
+}
+
+#quizResult h2 {
+  font-size: clamp(30px, 4.2vw, 52px);
+}
+
+.quiz-screen p,
+#quizResult p,
+#quizQuestion p,
+#quizLoading p,
+#quizStart p {
+  font-size: clamp(16px, 2.2vw, 20px);
+  line-height: 1.55;
+}
+
+.result-card strong {
+  font-size: clamp(18px, 2.5vw, 24px);
+  line-height: 1.2;
+}
+
+.result-bridge h3 {
+  font-size: clamp(20px, 2.5vw, 26px);
+  line-height: 1.15;
+}
+
+@media (max-width: 768px) {
+  .quiz-modal {
+    align-items: flex-start;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  .quiz-box {
+    width: 100%;
+    max-height: none;
+    padding: 24px;
+    border-radius: 26px;
+  }
+
+  .quiz-screen h2,
+  #quizResult h2,
+  #quizQuestion h2,
+  #quizLoading h2,
+  #quizStart h2 {
+    font-size: clamp(24px, 8vw, 36px);
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  .quiz-screen p,
+  #quizResult p,
+  #quizQuestion p,
+  #quizLoading p,
+  #quizStart p {
+    font-size: 16px;
+  }
+
+  .result-card,
+  .result-bridge {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .lead-form input {
+    min-height: 50px;
+  }
+
+  .consent {
+    align-items: flex-start;
+    font-size: 12px;
+  }
+
+  .consent input {
+    flex: 0 0 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .quiz-box {
+    padding: 20px;
+  }
+
+  .quiz-screen h2,
+  #quizResult h2 {
+    font-size: 26px;
+  }
+}
